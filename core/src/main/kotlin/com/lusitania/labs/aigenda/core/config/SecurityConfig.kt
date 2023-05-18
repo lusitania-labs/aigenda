@@ -1,4 +1,4 @@
-package com.lusitania.labs.aigenda.config
+package com.lusitania.labs.aigenda.core.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
@@ -10,11 +10,10 @@ import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 
-
 @Configuration
 class SecurityConfig(
-        @Value("\${security.enabled:true}")
-        private val isSecurityEnabled: Boolean
+    @Value("\${security.enabled:true}")
+    private val isSecurityEnabled: Boolean
 ) {
 
     @Bean

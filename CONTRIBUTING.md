@@ -1,4 +1,4 @@
-# Contributing to Aigenda
+# Contributing to AIgenda
 
 First off, thank you for considering contributing to Aigenda. It's people like you that make Aigenda such a great tool.
 

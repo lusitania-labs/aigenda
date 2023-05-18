@@ -16,7 +16,7 @@ We believe that the JVM has a lot to offer in terms of performance, scalability,
 Join us on this exciting journey as we work to make AI more accessible and useful for everyone. Whether you're an AI enthusiast, a Kotlin developer, or just someone who could use a little extra help managing your daily tasks, we invite you to try out AIgenda and see the difference it can make in your life.
 
 
-- **Email Communication Tools:** Outlook: Microsoft Outlook is primarily an email application but also includes features like calendar, task management, contact management, note-taking, journal logging, and web browsing.
+- **Email Communication Tools:** Outlook: Microsoft Outlook is primarily an email application but also includes features like calendar, task management, contact management, note-taking, journal logging and web browsing.
 - **Project Management and Issue Tracking Tools:** Jira: Jira is a project management tool developed by Atlassian. It is used for issue tracking, bug tracking, and agile project management.
 - **Version Control and Collaboration Platforms:** GitHub: GitHub is a web-based hosting service for version control using Git. It is primarily used for computer code and offers all of the distributed version control and source code management (SCM) functionality of Git, plus its own features like bug tracking, task management, and wikis for every project.
 

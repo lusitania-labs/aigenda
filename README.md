@@ -13,7 +13,7 @@ But that's not all. AIgenda is developed in Kotlin, a statically typed programmi
 Why Kotlin, you ask? Our goal is to attract JVM talent into the AI space, which is currently dominated by Python.
 We believe that the JVM has a lot to offer in terms of performance, scalability, and type safety, and we want to make it easier for developers familiar with the JVM to get involved in AI development.
 
-Join us on this exciting journey as we work to make AI more accessible and useful for everyone. Whether you're an AI enthusiast, a Kotlin developer, or just someone who could use a little extra help managing your daily tasks, we invite you to try out Aigenda and see the difference it can make in your life.
+Join us on this exciting journey as we work to make AI more accessible and useful for everyone. Whether you're an AI enthusiast, a Kotlin developer, or just someone who could use a little extra help managing your daily tasks, we invite you to try out AIgenda and see the difference it can make in your life.
 
 
 - **Email Communication Tools:** Outlook: Microsoft Outlook is primarily an email application but also includes features like calendar, task management, contact management, note-taking, journal logging, and web browsing.

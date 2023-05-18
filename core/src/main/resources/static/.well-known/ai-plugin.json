@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "AIgenda Plugin",
+  "name_for_model": "AIgenda",
+  "description_for_human": "Plugin for managing your day to day activities",
+  "description_for_model": "Aigenda is an open-source plugin designed to transform OpenAI's GPT into a daily personal assistant. It serves as a main plugin that can be enhanced with subsequent plugins for specific tasks such as manage your agenda, note taking, sending emails, reading GitHub pull requests, etc...",
+  "auth": {
+    "type": "none",
+    "client_url": "http://localhost:8080/login",
+    "scope": "",
+    "authorization_url": "https://example.com/login/",
+    "authorization_content_type": "application/x-www-form-urlencoded",
+    "verification_tokens": {
+      "openai": "Replace_this_string_with_the_verification_token_generated_in_the_ChatGPT_UI"
+    }
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:8080/openapi",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:8080/logo.png",
+  "contact_email": "alfredo.faria88@gmail.com",
+  "legal_info_url": "http://www.example.com/legal"
+}

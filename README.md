@@ -7,7 +7,7 @@ AIgenda is an open-source plugin designed to transform OpenAI's GPT into a daily
 
 ## Welcome to AIgenda: Your OpenAI GPT-Powered Personal Assistant
 
-We're excited to introduce Aigenda, an open-source plugin designed to harness the power of OpenAI's GPT and transform it into a daily personal assistant. Aigenda is more than just a plugin; it's a platform that can be extended with additional plugins to perform a variety of specific tasks. Whether you need help managing your agenda, taking notes, sending emails, or even reading GitHub pull requests, Aigenda has got you covered.
+We're excited to introduce AIgenda, an open-source plugin designed to harness the power of OpenAI's GPT and transform it into a daily personal assistant. AIgenda is more than just a plugin; it's a platform that can be extended with additional plugins to perform a variety of specific tasks. Whether you need help managing your agenda, taking notes, sending emails, or even reading GitHub pull requests, AIgenda has got you covered.
 
 But that's not all. AIgenda is developed in Kotlin, a statically typed programming language that runs on the Java Virtual Machine (JVM). 
 Why Kotlin, you ask? Our goal is to attract JVM talent into the AI space, which is currently dominated by Python.

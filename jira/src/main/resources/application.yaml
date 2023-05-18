@@ -1,0 +1,7 @@
+application:
+  version: 0.1.0
+  description: Manages your organisation's jira operations
+
+logging:
+  level:
+    root: info

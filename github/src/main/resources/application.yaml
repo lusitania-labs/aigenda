@@ -1,0 +1,7 @@
+application:
+  version: 0.1.0
+  description: Manages your organisation's github operations
+
+logging:
+  level:
+    root: info

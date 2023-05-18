@@ -75,6 +75,14 @@ subprojects {
 		}
 	}
 
+	tasks.withType<BootJar> {
+		enabled = false
+	}
+
+	tasks.withType<Test> {
+		useJUnitPlatform()
+	}
+
 	detekt {
 		autoCorrect = true
 		parallel = true
@@ -85,14 +93,6 @@ subprojects {
 	}
 }
 
-project(":core") {
-
-	tasks.withType<BootJar> {
-		enabled = false
-	}
-
-	tasks.withType<Jar> {
-		enabled = true
-	}
+tasks.withType<BootJar> {
+	enabled = false
 }
-

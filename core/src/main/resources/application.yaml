@@ -1,4 +1,5 @@
 application:
+  name: AIgenda
   version: 0.1.0
   description: Plugin for managing your day to day activities
 

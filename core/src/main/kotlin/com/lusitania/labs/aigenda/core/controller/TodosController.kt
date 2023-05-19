@@ -1,9 +1,11 @@
 package com.lusitania.labs.aigenda.core.controller
 
+import com.lusitania.labs.aigenda.core.dto.GreetingRequestDto
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.MediaType
-import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -17,12 +19,11 @@ class TodosController {
         summary = "Returns a list of your todos",
         description = "Returns a list of your todos"
     )
-    @GetMapping(
+    @PostMapping(
         value = ["/todos"],
         produces = [MediaType.TEXT_PLAIN_VALUE]
     )
-    @Suppress("FunctionOnlyReturningConstant")
-    fun getTodoList(): String {
-        return "beep bop"
+    fun getTodoList(@RequestBody request: GreetingRequestDto?): String {
+        return "beep bop ${request?.greeting}."
     }
 }

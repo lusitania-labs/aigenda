@@ -1,5 +1,5 @@
 <p>
-  <img src="docs/logo.png" alt="Portuguese man o' war" width="50" height="50" style="display: inline;"/> <span style="font-size: 70px;">AIgenda</span>
+  <img src="docs/images/logo.png" alt="Portuguese man o' war" width="50" height="50" style="display: inline;"/> <span style="font-size: 70px;">AIgenda</span>
 </p>
 AIgenda is an open-source plugin designed to transform OpenAI's GPT into a daily personal assistant.
 

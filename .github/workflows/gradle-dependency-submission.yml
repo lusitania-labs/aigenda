@@ -3,7 +3,7 @@ name: upload-dependencies
 on:
   push:
     branches:
-      - main
+      - 8-adds-github-actions
 
 jobs:
   build:

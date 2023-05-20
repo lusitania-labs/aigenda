@@ -36,3 +36,5 @@ If you're interested in contributing to the AIgenda project:
 ## License
 
 AIgenda is distributed under [Apache-2.0](LICENSE).
+
+testing actions

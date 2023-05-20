@@ -8,6 +8,8 @@ plugins {
 
 	kotlin("jvm") version "1.7.22"
 	kotlin("plugin.spring") version "1.7.22"
+
+	jacoco
 }
 
 allprojects {
@@ -33,6 +35,7 @@ subprojects {
 	apply(plugin = "kotlin")
 	apply(plugin = "kotlin-spring")
 	apply(plugin = "io.gitlab.arturbosch.detekt")
+	apply(plugin = "jacoco")
 
 	dependencies {
 		// Kotlin Standard Library
@@ -81,6 +84,15 @@ subprojects {
 
 	tasks.withType<Test> {
 		useJUnitPlatform()
+		finalizedBy(tasks.jacocoTestReport)
+	}
+
+	tasks.jacocoTestReport {
+		dependsOn(tasks.test)
+		reports {
+			xml.required.set(true)
+			xml.outputLocation.set(File("${project.buildDir}/jacocoXml/jacocoTestReport.xml"))
+		}
 	}
 
 	detekt {

@@ -1,4 +1,5 @@
 name: upload-dependencies
+
 on:
   push:
     branches:
@@ -11,6 +12,12 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
 

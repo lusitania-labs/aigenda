@@ -3,7 +3,7 @@ name: upload-dependencies
 on:
   push:
     branches:
-      - main
+      - 8-adds-github-actions
 
 jobs:
   build:
@@ -24,4 +24,5 @@ jobs:
       - name: Run snapshot action
         uses: mikepenz/gradle-dependency-submission@v0.8.6
         with:
+          gradle-build-module: ":core"
           sub-module-mode: 'COMBINED'

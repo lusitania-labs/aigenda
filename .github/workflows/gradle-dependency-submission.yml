@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,5 +25,6 @@ jobs:
       - name: Run snapshot action
         uses: mikepenz/gradle-dependency-submission@v0.8.6
         with:
-          gradle-build-module: ":core"
-          sub-module-mode: 'COMBINED'
+          gradle-build-module: |-
+            :core
+          sub-module-mode: 'INDIVIDUAL_DEEP'

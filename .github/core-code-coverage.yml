@@ -1,0 +1,47 @@
+name: core-code-coverage
+
+concurrency:
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  core-code-coverage:
+    name: Build and test AIgenda
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@v2
+        id: gradle-build
+        continue-on-error: false
+        with:
+          arguments: build
+          build-root-directory: .
+
+      - name: Add coverage to PR
+        id: jacoco
+        uses: madrapps/jacoco-report@v1.3
+        with:
+          paths: ${{ github.workspace }} /core/build/jacocoXml/jacocoTestReport.xml
+          token: ${{secrets.GITHUB_TOKEN}}
+          min-coverage-overall: 40
+          min-coverage-changed-files: 60
+          title: AIgenda Code Coverage
+          update-comment: true
+
+      - name: Get the Coverage info
+        run: |
+          echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
+          echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"

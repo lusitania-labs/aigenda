@@ -22,8 +22,8 @@ Join us on this exciting journey as we work to make AI more accessible and usefu
 
 
 ## Documentation
-- **[Diagram](docs/diagram.png)** TBD
-- **[Setup](docs/diagram.png)** TBD
+- **[Developer guide](docs/DEVELOPER_GUIDE.md)** 
+- **[Setup](docs/SETUP.md)**
 
 
 ## Contributing

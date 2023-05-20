@@ -25,6 +25,9 @@ jobs:
       - name: Run snapshot action
         uses: mikepenz/gradle-dependency-submission@v0.8.6
         with:
+          gradle-build-configuration-mapping: |-
+            :core|compileClasspath
           gradle-build-module: |-
             :core
           sub-module-mode: 'INDIVIDUAL_DEEP'
+          include-build-environment: true

@@ -23,13 +23,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build with Gradle
+      - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-        id: gradle-build
-        continue-on-error: false
-        with:
-          arguments: build
-          build-root-directory: aigenda
+
+      - name: Execute Gradle build
+        run: ./gradlew build
 
       - name: Add coverage to PR
         id: jacoco

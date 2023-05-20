@@ -26,10 +26,10 @@ jobs:
         uses: mikepenz/gradle-dependency-submission@v0.8.6
         with:
           gradle-project-path: |-
-            core
+            .
           gradle-build-configuration-mapping: |-
             :core|compileClasspath
           gradle-build-module: |-
             :core
-          sub-module-mode: 'INDIVIDUAL_DEEP'
+          sub-module-mode: 'COMBINED'
           include-build-environment: true

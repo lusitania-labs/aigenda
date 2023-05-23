@@ -2,6 +2,12 @@ application:
   version: 0.1.0
   description: Manages your organisation's github operations
 
+aigenda:
+  github:
+    orgName: ${ORG_NAME:lusitania-labs}
+    access:
+      token: ${GITHUB_PAT}
+
 logging:
   level:
     root: info

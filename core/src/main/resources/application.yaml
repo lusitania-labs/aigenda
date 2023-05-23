@@ -11,6 +11,9 @@ security:
   enabled: false
 
 spring:
+  profiles:
+    include: github
+
   security:
     user:
       name: admin

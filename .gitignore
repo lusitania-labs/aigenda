@@ -29,3 +29,6 @@ replay_pid*
 #gradle
 .gradle/
 **/build/**
+
+#custom
+.env
